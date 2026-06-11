@@ -77,3 +77,7 @@ assets/screenshots/mobile-view.png
 ## Additional Testing
 
 Manual browser testing completed successfully.
+
+## Additional Testing
+
+Manual browser testing completed successfully.
