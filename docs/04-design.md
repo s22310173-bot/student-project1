@@ -9,41 +9,34 @@
 
 ## User Flow
 
-User membuka aplikasi
+Create Question
 ↓
-Masukkan tugas
+Save Question
 ↓
-Klik Tambah
+Start Quiz
 ↓
-Tugas muncul
+Answer Question
 ↓
-Tandai selesai atau hapus
+View Result
 
-## Component Breakdown
+## Components
 
-- Input Task
-- Button Add
-- Task List
-- Delete Button
+- Question Form
+- Quiz Area
+- Result Area
 
 ## Data Model
 
-Task:
+Question:
 
-- id
-- title
-- completed
+- question
+- optionA
+- optionB
+- optionC
+- optionD
+- correctAnswer
 
-## File Structure
+Student:
 
-src/
-├── index.html
-├── style.css
-└── script.js
-
-tests/
-└── task.test.js
-
-## Trade-offs
-
-Menggunakan JavaScript sederhana tanpa framework agar mudah dipahami.
+- studentName
+- score

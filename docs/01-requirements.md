@@ -2,50 +2,40 @@
 
 ## Product Idea
 
-Student Task Tracker adalah aplikasi web sederhana untuk membantu mahasiswa mencatat dan mengelola tugas kuliah.
+QuizFlow adalah aplikasi kuis sederhana berbasis web yang memungkinkan dosen membuat soal dan mahasiswa mengerjakan kuis.
 
 ## Problem Statement
 
-Mahasiswa sering lupa tugas yang harus dikerjakan karena tidak memiliki sistem pencatatan yang sederhana dan mudah digunakan.
+Dosen membutuhkan cara sederhana untuk membuat kuis dan mahasiswa membutuhkan cara mudah untuk mengerjakan kuis dan melihat hasilnya.
 
 ## Target Users
 
+- Dosen
 - Mahasiswa
-- Pelajar
-- Pengguna yang ingin mengatur tugas harian
 
 ## User Goals
 
-- Menambahkan tugas baru
-- Melihat daftar tugas
-- Menandai tugas selesai
-- Menghapus tugas yang tidak diperlukan
+- Membuat soal kuis.
+- Memulai kuis.
+- Menjawab soal.
+- Melihat nilai.
+- Mendapatkan validasi input.
 
 ## Functional Requirements
 
-1. User dapat menambahkan tugas.
-2. User dapat melihat daftar tugas.
-3. User dapat menandai tugas sebagai selesai.
-4. User dapat menghapus tugas.
-5. Sistem menampilkan validasi jika input kosong.
+1. User dapat membuat soal pilihan ganda.
+2. User dapat memulai kuis.
+3. User dapat menjawab soal.
+4. User dapat melihat hasil kuis.
+5. Sistem memvalidasi input yang kosong.
 
-## Non-Functional Requirements
+## Non Functional Requirements
 
 - Mudah digunakan.
 - Responsif pada desktop dan mobile.
 - Berjalan di browser modern.
 
-## Assumptions
-
-- Pengguna memiliki browser.
-- Jumlah tugas relatif sedikit.
-
 ## Constraints
 
-- Proyek dikerjakan dalam waktu dua hari.
 - Tidak menggunakan database.
-
-## Open Questions
-
-- Apakah tugas perlu disimpan setelah browser ditutup?
-- Apakah kategori tugas diperlukan?
+- Dapat diselesaikan dalam dua hari.

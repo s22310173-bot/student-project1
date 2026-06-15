@@ -1,83 +1,50 @@
-# TDD and Testing Report
+# TDD and Testing
 
 ## Issue Tested
 
-User Can Create Task
+Input Validation
 
-## Behavior Under Test
+### RED
 
-Menambahkan tugas baru.
+Test dibuat terlebih dahulu dan gagal.
 
-## RED
+Contoh:
 
-Menulis test terlebih dahulu dan test gagal.
+Expected:
+Question tidak boleh kosong.
 
-## GREEN
+Result:
+FAIL
 
-Menambahkan implementasi addTask().
+### GREEN
 
-## REFACTOR
+Validasi ditambahkan ke fungsi saveQuestion().
 
-Membersihkan kode dan menambahkan komentar.
-
-## Final Result
-
+Result:
 PASS
+
+### REFACTOR
+
+Kode validasi dirapikan dan dokumentasi diperbarui.
 
 ---
 
-## Issue Tested
+## Browser Testing
 
-Validation For Empty Input
+Checklist:
 
-## Behavior Under Test
-
-Input kosong tidak boleh diterima.
-
-## RED
-
-Menulis test validasi dan test gagal.
-
-## GREEN
-
-Menambahkan pengecekan input kosong.
-
-## REFACTOR
-
-Merapikan fungsi validasi.
-
-## Final Result
-
-PASS
-
----
-
-# Browser Testing
-
-## Checklist
-
-- Tambah tugas berhasil.
-- Lihat daftar tugas berhasil.
-- Tandai selesai berhasil.
-- Hapus tugas berhasil.
-- Validasi input berhasil.
-- Tidak ada error pada Console.
-- Tampilan mobile berhasil.
+- Create Question berhasil.
+- Start Quiz berhasil.
+- Answer Question berhasil.
+- View Quiz Result berhasil.
+- Input Validation berhasil.
 
 ## Evidence
-
-assets/screenshots/app-running.png
 
 assets/screenshots/failing-test.png
 
 assets/screenshots/passing-test.png
 
+assets/screenshots/app-running.png
+
 assets/screenshots/mobile-view.png
-
-## Additional Testing
-
-Manual browser testing completed successfully.
-
-## Additional Testing
-
-Manual browser testing completed successfully.

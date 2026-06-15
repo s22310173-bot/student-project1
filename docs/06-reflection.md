@@ -1,37 +1,26 @@
 # Reflection
 
-## How did you use AI during requirements clarification?
+## AI Usage
 
-AI membantu menyusun kebutuhan sistem dan mengidentifikasi fitur utama.
+AI digunakan untuk membantu:
 
-## How did you use AI during PRD creation?
+- Menyusun requirements.
+- Membuat PRD.
+- Membagi fitur menjadi vertical slice issues.
+- Membuat desain sistem.
+- Membantu implementasi HTML, CSS, dan JavaScript.
+- Membantu pengujian dan dokumentasi.
 
-AI membantu mengubah requirements menjadi PRD yang terstruktur.
+## Verification
 
-## How did you use AI during issue breakdown?
+Semua fitur diuji secara manual melalui browser dan DevTools.
 
-AI membantu membagi fitur menjadi vertical-slice issues.
+## Lessons Learned
 
-## How did you use AI during coding?
+Penggunaan AI membantu mempercepat proses pengembangan namun hasil tetap diverifikasi secara manual.
 
-AI membantu membuat struktur HTML, CSS, dan JavaScript.
+## Future Improvements
 
-## How did you use AI during testing?
-
-AI membantu membuat test plan dan dokumentasi TDD.
-
-## Where did AI make mistakes?
-
-Beberapa saran AI perlu disesuaikan dengan ruang lingkup proyek.
-
-## What did you verify manually?
-
-Semua fitur diuji langsung melalui browser dan DevTools.
-
-## What software engineering decision are you most confident about?
-
-Pemilihan fitur sederhana sehingga dapat selesai tepat waktu.
-
-## What would you improve with more time?
-
-Menambahkan Local Storage agar data tetap tersimpan setelah refresh.
+- Menambahkan penyimpanan data.
+- Menambahkan banyak kuis.
+- Menambahkan timer kuis.

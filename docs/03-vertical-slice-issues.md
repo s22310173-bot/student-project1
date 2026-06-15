@@ -1,75 +1,42 @@
-# Issue 1 - User Can Create Task
+# Issue #1 Create Question
 
-## Type
+Acceptance Criteria:
 
-AFK
-
-## Acceptance Criteria
-
-- User dapat menambahkan tugas.
-- Tugas muncul di daftar.
-- Input dibersihkan setelah submit.
+- User dapat membuat soal pilihan ganda.
+- Soal tersimpan di sistem.
 
 ---
 
-# Issue 2 - User Can View Task List
+# Issue #2 Start Quiz
 
-## Type
+Acceptance Criteria:
 
-AFK
-
-## Acceptance Criteria
-
-- Semua tugas tampil dalam daftar.
-- Urutan sesuai input.
+- User dapat memulai kuis.
+- Soal tampil di layar.
 
 ---
 
-# Issue 3 - User Can Mark Task Completed
+# Issue #3 Answer Questions
 
-## Type
+Acceptance Criteria:
 
-AFK
-
-## Acceptance Criteria
-
-- User dapat menandai tugas selesai.
-- Tampilan berubah menjadi dicoret.
+- User dapat memilih jawaban.
+- Sistem menerima jawaban.
 
 ---
 
-# Issue 4 - User Can Delete Task
+# Issue #4 View Quiz Result
 
-## Type
+Acceptance Criteria:
 
-AFK
-
-## Acceptance Criteria
-
-- User dapat menghapus tugas.
-- Tugas hilang dari daftar.
+- Nilai ditampilkan setelah kuis selesai.
+- Nama mahasiswa ditampilkan.
 
 ---
 
-# Issue 5 - Validation For Empty Input
+# Issue #5 Input Validation
 
-## Type
-
-AFK
-
-## Acceptance Criteria
+Acceptance Criteria:
 
 - Input kosong ditolak.
-- Pesan error tampil.
-
----
-
-# Issue 6 - Storage Decision
-
-## Type
-
-HITL
-
-## Acceptance Criteria
-
-- Menentukan apakah Local Storage digunakan atau tidak.
+- Pesan error ditampilkan.

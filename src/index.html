@@ -1,20 +1,96 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Student Task Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizFlow</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Student Task Tracker</h1>
-
     <div class="container">
-      <input type="text" id="taskInput" placeholder="Masukkan tugas..." />
+      <h1>QuizFlow</h1>
 
-      <button onclick="addTask()">Tambah Tugas</button>
+      <p>
+        Dosen membuat soal. Mahasiswa mengerjakan kuis dan melihat hasilnya.
+      </p>
+
+      <div class="tabs">
+        <button onclick="showCreate()">1. Buat Soal</button>
+
+        <button onclick="showQuiz()">2. Mulai Kuis</button>
+      </div>
+
+      <hr />
+
+      <!-- CREATE QUESTION -->
+
+      <div id="createSection">
+        <h2>Buat Soal</h2>
+
+        <label>Pertanyaan</label>
+
+        <input type="text" id="question" placeholder="Contoh: 2 + 2 = ?" />
+
+        <label>Pilihan A</label>
+        <input type="text" id="optionA" />
+
+        <label>Pilihan B</label>
+        <input type="text" id="optionB" />
+
+        <label>Pilihan C</label>
+        <input type="text" id="optionC" />
+
+        <label>Pilihan D</label>
+        <input type="text" id="optionD" />
+
+        <label>Jawaban Benar</label>
+
+        <select id="correct">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+        </select>
+
+        <button onclick="saveQuestion()">Simpan Soal</button>
+
+        <h3>
+          Jumlah Soal:
+          <span id="questionCount">0</span>
+        </h3>
+      </div>
+
+      <!-- QUIZ SECTION -->
+
+      <div id="quizSection" style="display: none">
+        <h2>Mulai Kuis</h2>
+
+        <label>Nama Mahasiswa</label>
+
+        <input
+          type="text"
+          id="studentName"
+          placeholder="Masukkan nama mahasiswa"
+        />
+
+        <button onclick="startQuiz()">Mulai Kuis</button>
+
+        <div id="quizArea"></div>
+
+        <h2>Data Mahasiswa</h2>
+
+        <table id="studentTable">
+          <thead>
+            <tr>
+              <th>Nama Mahasiswa</th>
+              <th>Nilai</th>
+            </tr>
+          </thead>
+
+          <tbody id="studentBody"></tbody>
+        </table>
+      </div>
     </div>
-
-    <ul id="taskList"></ul>
 
     <script src="script.js"></script>
   </body>
