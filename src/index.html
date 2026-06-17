@@ -3,32 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuizFlow</title>
+    <title>🎓 QuizFlow</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
-      <h1>QuizFlow</h1>
+      <h1>🎓 QuizFlow</h1>
 
-      <p>
-        Dosen membuat soal. Mahasiswa mengerjakan kuis dan melihat hasilnya.
-      </p>
+      <p class="subtitle">Platform Kuis Sederhana untuk Dosen dan Mahasiswa</p>
 
+      <!-- Statistik -->
+      <div class="stats">
+        <div class="stat-card">
+          <h2 id="questionCount">0</h2>
+          <p>Total Soal</p>
+        </div>
+
+        <div class="stat-card">
+          <h2 id="studentCount">0</h2>
+          <p>Mahasiswa</p>
+        </div>
+      </div>
+
+      <!-- Menu -->
       <div class="tabs">
-        <button onclick="showCreate()">1. Buat Soal</button>
+        <button onclick="showCreate()">📝 Buat Soal</button>
 
-        <button onclick="showQuiz()">2. Mulai Kuis</button>
+        <button onclick="showQuiz()">🚀 Mulai Kuis</button>
       </div>
 
       <hr />
 
-      <!-- CREATE QUESTION -->
+      <!-- FORM BUAT SOAL -->
 
-      <div id="createSection">
+      <div id="createSection" class="quiz-card">
         <h2>Buat Soal</h2>
 
         <label>Pertanyaan</label>
-
         <input type="text" id="question" placeholder="Contoh: 2 + 2 = ?" />
 
         <label>Pilihan A</label>
@@ -52,17 +64,12 @@
           <option value="D">D</option>
         </select>
 
-        <button onclick="saveQuestion()">Simpan Soal</button>
-
-        <h3>
-          Jumlah Soal:
-          <span id="questionCount">0</span>
-        </h3>
+        <button class="save-btn" onclick="saveQuestion()">Simpan Soal</button>
       </div>
 
-      <!-- QUIZ SECTION -->
+      <!-- AREA KUIS -->
 
-      <div id="quizSection" style="display: none">
+      <div id="quizSection" class="quiz-card" style="display: none">
         <h2>Mulai Kuis</h2>
 
         <label>Nama Mahasiswa</label>
@@ -73,11 +80,21 @@
           placeholder="Masukkan nama mahasiswa"
         />
 
-        <button onclick="startQuiz()">Mulai Kuis</button>
+        <button class="start-btn" onclick="startQuiz()">Mulai Kuis</button>
+
+        <!-- Progress Bar -->
+
+        <div class="progress-container">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <!-- Soal Kuis -->
 
         <div id="quizArea"></div>
 
-        <h2>Data Mahasiswa</h2>
+        <!-- Tabel Hasil -->
+
+        <h2>📊 Data Mahasiswa</h2>
 
         <table id="studentTable">
           <thead>
